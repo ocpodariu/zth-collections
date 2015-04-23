@@ -70,12 +70,9 @@ public class MyList<Integer> extends ArrayList<Integer> {
 
     @Override
     public boolean addAll(Collection<? extends Integer> c) {
-        // TODO daca noua colectie contine acelasi element de mai multe ori => differentElements se actualizeaza gresit
-        // i.e. (+1) pentru fiecare valoare duplicat
-
         // Update counter
         for (Integer i : c)
-            if (!this.contains(i))
+            if ((Collections.frequency(c, i) == 1) && (!this.contains(i)))
                 differentElements++;
 
         return super.addAll(c);
@@ -83,12 +80,9 @@ public class MyList<Integer> extends ArrayList<Integer> {
 
     @Override
     public boolean addAll(int index, Collection<? extends Integer> c) {
-        // TODO daca noua colectie contine acelasi element de mai multe ori => differentElements se actualizeaza gresit
-        // i.e. (+1) pentru fiecare valoare duplicat
-
         // Update counter
         for (Integer i : c)
-            if (!this.contains(i))
+            if ((Collections.frequency(c, i) == 1) && (!this.contains(i)))
                 differentElements++;
 
         return super.addAll(index, c);
