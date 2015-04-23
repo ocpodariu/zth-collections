@@ -27,7 +27,7 @@ public class Exercise3 {
         listToAdd = l;
     }
 
-    public void addElementsToSets(){
+    public void addElementsToSets() {
         // TODO Exercise #3 a) Check the content of the elements you will add into the Set
         System.out.println("The elements that will be added to the Sets: ");
         for (String s : listToAdd)
