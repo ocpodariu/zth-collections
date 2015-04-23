@@ -23,7 +23,7 @@ import java.util.ArrayList;
  *
  *             Secondly, you will also need to override the remove methods (Hint: of course, the List
  *             documentation) because the number of different elements in the list could change if
- *             the last element of its kind in the list is removed and by not overrriding it the
+ *             the last element of its kind in the list is removed and by not overriding it the
  *             counter will remain unchanged.
  *
  *             Finally, you will need to override the clear method and create a getter method for the
