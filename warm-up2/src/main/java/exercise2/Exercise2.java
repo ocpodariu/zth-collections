@@ -11,12 +11,13 @@ import java.util.*;
  *              For this exercise you need to follow in order, all the TODO steps.
  */
 public class Exercise2 {
+
     private List<Student> studentList;
     private List<Long> cnps;
     private List<StudentWithoutHashCode> studentListWithoutHashCode;
     private List<StudentWithoutEqualsAndHashCode> studentListWithoutEqualsAndHashCode;
 
-    public Exercise2(List<Student> studentList, List<Long> cnps){
+    public Exercise2(List<Student> studentList, List<Long> cnps) {
         this.studentList = studentList;
         this.studentListWithoutHashCode = new ArrayList<StudentWithoutHashCode>();
         this.studentListWithoutEqualsAndHashCode = new ArrayList<StudentWithoutEqualsAndHashCode>();
@@ -27,12 +28,10 @@ public class Exercise2 {
         this.cnps = cnps;
     }
 
-    public void addStudents(){
-
-        System.out.println("The list of students is: " + studentList);
-
+    public void addStudents() {
         // TODO Exercise 2 a) In order to print the elements of Student class in a human readable way you should override
         // TODO the toString() method from Student class -> TODO Exercise 2 a)
+        System.out.println("The list of students is: " + studentList);
 
         // A Set with elements of type Student without the methods equals() and hashCode() implemented
         Set<StudentWithoutEqualsAndHashCode> studentSetWithoutEqualsAndHashCode =
@@ -51,7 +50,7 @@ public class Exercise2 {
         System.out.println("The set of students is: " + studentSetWithoutEqualsAndHashCode);
         System.out.println("The map of students is: " + studentMapWithoutEqualsAndHashCode);
 
-        // TODO Exercise 2 b) After you finished the Exercise 2 a) run the test file and look at the content ofSS
+        // TODO Exercise 2 b) After you finished the Exercise 2 a) run the test file and look at the content of SS
         // TODO the collections studentSetWithoutEqualsAndHashCode and studentMapWithoutEqualsAndHashCode. What do you notice?
         // TODO Go to Exercise 2 c) from Student class and implement equals() method
 
@@ -92,6 +91,5 @@ public class Exercise2 {
 
         System.out.println("The set of students with equals and hashCode implemented is: " + studentSet);
         System.out.println("The map of students with equals and hashCode implemented is: " + studentMap);
-
     }
 }
